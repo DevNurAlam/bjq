@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    
+    <!-- Font Awesome link-->
+    <!--<script src="https://kit.fontawesome.com/5d36bcb580.js" crossorigin="anonymous"></script>-->
+
+    <!--CSS Links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="media/media.css">
+    
+    <title>Basic JQ</title>
+  </head>
+  <body>
+    <section class="service">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+         <!--JQ-->
+         <h1>Click the button to show the download link</h1>
+         <button class="btn btn-danger">Show the download link</button>
+         <button class="btn btn-danger" id="hide">Hide</button>
+         <button class="btn btn-danger show_alert" id="hide">Hide</button>
+         <h1>Lorem ipsum dolor sit amet.</h1>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--JS links-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+     $(document).ready(function(){
+      //show alert one
+      alert("Hello Web Developer");
+
+      //show download alert 
+      $("button").hover(function(){
+        alert("Download");
+      });
+
+      //class
+      $("show_alert").click(function(){
+        alert("show");
+      });
+
+
+
+
+
+     });
+    </script>
+    
+  </body>
+</html>
